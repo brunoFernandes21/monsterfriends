@@ -4,9 +4,23 @@
 body {
   margin: 0;
   font-family: 'Courier New', Courier, monospace;
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(10,79,187,1) 67%);
   /* min-height: 100vh; */
 }
-
+@font-face {
+  font-family: 'SEGA LOGO FONT';
+  font-style: normal;
+  font-weight: normal;
+  src: local('SEGA LOGO FONT'), url('SEGA.woff') format('woff');
+}
+h1 {
+  font-family: 'SEGA LOGO FONT';
+  font-weight: 200;
+  color: white;
+}
+input {
+  width: 500px;
+}
 /* .robo_card {
   background-color: lightblue;
   display: inline-block;
