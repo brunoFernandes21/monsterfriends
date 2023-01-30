@@ -1,12 +1,10 @@
 import { useEffect, useState } from "react";
 import CardList from "./components/CardList";
-// import { robots } from './robots'
 import SearchBox from "./components/SearchBox";
 import Scroll from "./components/Scroll"
 
 const App = () => {
   const [ allRobots, setAllRobots ] = useState([]);
-  // const [ filteredRobots, setFilteredRobots ] = useState([])
   const [ searchFieldValue, setSearchFieldValue ] = useState("");
   const [ loading, setLoading ] = useState(false)
 
@@ -32,7 +30,7 @@ const App = () => {
   } else {
     return (
       <div className="tc">
-        <h1 className="f1">Monterfriends</h1>
+        <h1 className="f1">Monsterfriends</h1>
         <SearchBox searchFieldValue={searchFieldValue} handleChange={onSearchChange} />
         <Scroll>
         <CardList robots={filteredRobots}/>
