@@ -5,6 +5,7 @@ const Scroll = ({ children }) => {
         overflowY: 'scroll',
         border: '5px solid black',
         height: '550px',
+        borderRadius: '10px'
     }
   return (
     <div style={styles} className='scrollbar'>
