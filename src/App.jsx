@@ -6,7 +6,7 @@ import Scroll from "./components/Scroll"
 const App = () => {
   const [ allRobots, setAllRobots ] = useState([]);
   const [ searchFieldValue, setSearchFieldValue ] = useState("");
-  const [ loading, setLoading ] = useState(false)
+  const [ loading, setLoading ] = useState(true)
 
   useEffect(() => {
     const getUsers = async () => {
