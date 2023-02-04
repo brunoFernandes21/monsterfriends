@@ -30,7 +30,7 @@ const App = () => {
   } else {
     return (
       <div className="tc">
-        <h1 className="f1">Monsterfriends</h1>
+        <h1 className="f1">Robotfriends</h1>
         <SearchBox searchFieldValue={searchFieldValue} handleChange={onSearchChange} />
         <Scroll>
         <CardList robots={filteredRobots}/>
